@@ -1,13 +1,13 @@
 ---
-description: "Read docs/compliance"
+description: "Review active, waiting and dropped placements"
 ---
 
-# compliance
+# enrolments
 
-Read docs/compliance.md. Review evidence flags with the responsible person. A clear result is not a legal or safety clearance.
+Review active, waiting and dropped placements.
 
 ```bash
-node scripts/swim.mjs compliance
+node scripts/swim.mjs enrolments
 ```
 
 Read current records. Report facts from the output; ask for missing write values. Read commands accept --json. Ambiguous matches list candidates and exit 1. Nothing sends from this system.

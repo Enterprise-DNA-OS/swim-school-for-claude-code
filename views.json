@@ -1,13 +1,44 @@
 [
   {
     "name": "week",
-    "title": "This week",
-    "subtitle": "Swim School for Claude Code: what needs attention, rendered by npm run view",
+    "title": "The swim school week",
     "sections": [
       {
-        "title": "Needs attention",
-        "note": "TODO(author): point this at the industry's attention view (overdue, stuck, quiet).",
-        "sql": "select 'replace me' as item, 'TODO(author)' as why"
+        "title": "Class places",
+        "sql": "select code,name,level,capacity,enrolled,places,waiting from class_capacity order by code"
+      },
+      {
+        "title": "Make-up credits",
+        "sql": "select code,student,expires_on,status from makeup_queue order by expires_on"
+      }
+    ]
+  },
+  {
+    "name": "attendance",
+    "title": "Attendance and progress",
+    "sections": [
+      {
+        "title": "Lesson coverage",
+        "sql": "select code,name,scheduled,marked,missing,absent,last_present from attendance_watch order by code"
+      },
+      {
+        "title": "Level progress",
+        "sql": "select code,name,level,required,passed,last_assessed from skill_progress order by code"
+      }
+    ]
+  },
+  {
+    "name": "attention",
+    "title": "Fees and safety evidence",
+    "sections": [
+      {
+        "title": "Balances due",
+        "sql": "select code,family,due_on,currency,balance_cents from fee_balances where balance_cents>0 order by due_on"
+      },
+      {
+        "title": "Evidence to review",
+        "sql": "select * from compliance_flags order by rule,subject",
+        "note": "Evidence reminders only. Staff confirm applicability and current status with the issuing body."
       }
     ]
   }

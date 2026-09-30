@@ -1,13 +1,13 @@
 ---
-description: "Read docs/compliance"
+description: "Review enrolled students with no recent contact note"
 ---
 
-# compliance
+# quiet-families
 
-Read docs/compliance.md. Review evidence flags with the responsible person. A clear result is not a legal or safety clearance.
+Review enrolled students with no recent contact note.
 
 ```bash
-node scripts/swim.mjs compliance
+node scripts/swim.mjs quiet-families
 ```
 
 Read current records. Report facts from the output; ask for missing write values. Read commands accept --json. Ambiguous matches list candidates and exit 1. Nothing sends from this system.

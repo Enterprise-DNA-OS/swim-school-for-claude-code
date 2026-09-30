@@ -1,0 +1,42 @@
+[
+  [
+    "Which children have repeated absences and overdue family fees?",
+    "absence-and-fees"
+  ],
+  [
+    "Which lessons still have an unmarked child on the roll?",
+    "missing-marks"
+  ],
+  [
+    "Who passed every skill in their current level?",
+    "ready-to-move"
+  ],
+  [
+    "Which waiting students are attached to a class with space?",
+    "waitlist-review"
+  ],
+  [
+    "Which unused make-up credits expire next?",
+    "makeups-due"
+  ],
+  [
+    "Which eligible lessons have room for a particular make-up credit?",
+    "makeup-options MK-01"
+  ],
+  [
+    "Which instructors need a safety-check evidence review?",
+    "compliance"
+  ],
+  [
+    "Which enrolled students have no recent guardian contact note?",
+    "quiet-families"
+  ],
+  [
+    "Which family charges still have a balance, in each currency?",
+    "balances"
+  ],
+  [
+    "Which children have no assessment in their current level?",
+    "progress-review"
+  ]
+]
